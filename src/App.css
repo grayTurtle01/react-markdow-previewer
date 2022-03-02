@@ -1,0 +1,30 @@
+body{
+    background: #87b5b5;
+  }
+  
+  #editor{
+    width: 500px;
+    height: 300px;
+    resize: none;
+    background: #c0d8d8
+  }
+  
+  #preview{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    overflow: scroll;
+    background: #c0d8d8
+  }
+  
+  .toolbar{
+    background: #4aa3a3;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .container{
+    flex-wrap: wrap;
+  }
+  
