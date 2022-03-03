@@ -7,6 +7,7 @@ import './App.css'
 import Editor from './components/Editor'
 import Previewer from './components/Previewer'
 
+
 const App = ()=>{
     const [input, setInput] = useState('# Hello from State \n## Sub Heading \n [Link](http://x.com) \n\n `alert("hello js")` \n  ```\nlet x = 42; \nalert(x)\n```\n- first\n- second\n > Dont be Evil\n **bold text**\n\n ![Imge](https://cdn-images-1.medium.com/max/1200/1*MotlWcSa2n6FrOx3ul89kw.png) ')
     const [editorBig, toogleEditor] = useState(false)
@@ -40,6 +41,8 @@ const App = ()=>{
       }
 
     },[previewerBig])   
+
+
 
     function handleChange(e){
       let newValue = e.target.value
