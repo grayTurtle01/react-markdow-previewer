@@ -26,7 +26,7 @@ const App = ()=>{
         editor.style.height = '600px'
       }
       else{
-        editor.style.height = '200px'
+        editor.style.height = '300px'
       }
 
     },[editorBig])   
@@ -37,7 +37,7 @@ const App = ()=>{
         previewer.style.height = '600px'
       }
       else{
-        previewer.style.height = '200px'
+        previewer.style.height = '300px'
       }
 
     },[previewerBig])   

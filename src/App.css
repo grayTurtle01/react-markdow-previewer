@@ -4,13 +4,13 @@ body{
   
 #editor{
   width: 500px;
-  height: 200px;
+  height: 300px;
   background: #c0d8d8
 }
 
 #previewer{
   width: 500px;
-  height: 200px;
+  height: 300px;
   border: 1px solid black;
   overflow: scroll;
   background: #c0d8d8
