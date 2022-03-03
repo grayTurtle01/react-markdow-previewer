@@ -3,7 +3,9 @@ import {useState, useEffect} from 'react'
 
 import './App.css'
 
+// Components 
 import Editor from './components/Editor'
+import Previewer from './components/Previewer'
 
 const App = ()=>{
     const [input, setInput] = useState('# Hello from State \n## Sub Heading \n [Link](http://x.com) \n\n `alert("hello js")` \n  ```\nlet x = 42; \nalert(x)\n```\n- first\n- second\n > Dont be Evil\n **bold text**\n\n ![Imge](https://cdn-images-1.medium.com/max/1200/1*MotlWcSa2n6FrOx3ul89kw.png) ')
@@ -62,22 +64,9 @@ const App = ()=>{
                   resizeEditor={resizeEditor}
                   editorBig={editorBig} />
 
-          <div>
-          
-            <div className="toolbar">
-              <div>
-                <i className="fab fa-free-code-camp"></i> Previewer
-              </div>
-                {
-                  previewerBig ?
-                  <i className="fa fa-compress" onClick={resizePreviewer}></i> : 
-                  <i className="fa fa-arrows-alt" onClick={resizePreviewer}></i>
-                }
-            </div>
-          
-            <div id="previewer" className={ previewerBig? 'bigSize': ''} ></div>
-
-          </div>
+          <Previewer resizePreviewer={resizePreviewer}
+                     previewerBig={previewerBig}
+                     /> 
           
       </div>
 

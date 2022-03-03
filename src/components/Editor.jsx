@@ -16,8 +16,7 @@ const Editor = ({resizeEditor, input, editorBig, handleChange})=>{
         
         <textarea id="editor" 
                   value={input} 
-                  onChange={handleChange}
-                  className={ editorBig? 'bigSize': ''}
+                  onChange={handleChange}                 
          ></textarea>
       
     </div>
