@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react'
 
 import './App.css'
 
+import Editor from './components/Editor'
+
 const App = ()=>{
     const [input, setInput] = useState('# Hello from State \n## Sub Heading \n [Link](http://x.com) \n\n `alert("hello js")` \n  ```\nlet x = 42; \nalert(x)\n```\n- first\n- second\n > Dont be Evil\n **bold text**\n\n ![Imge](https://cdn-images-1.medium.com/max/1200/1*MotlWcSa2n6FrOx3ul89kw.png) ')
     const [editorBig, toogleEditor] = useState(false)
@@ -53,29 +55,12 @@ const App = ()=>{
 
 
     return (
-        <div className="d-flex justify-content-around mt-3 container">
+      <div className="d-flex justify-content-around mt-3 container">
       
-          <div>
-
-              <div className="toolbar">
-                <div>
-                  <i className="fab fa-free-code-camp"></i> Editor
-                </div>
-                  { editorBig ?
-                    <i className="fa fa-compress" onClick={resizeEditor}></i>:
-                    <i className="fa fa-arrows-alt" onClick={resizeEditor}></i>
-                  }
-              </div>
-
-              
-              <textarea id="editor" 
-                        value={input} 
-                        onChange={handleChange}
-                        className={ editorBig? 'bigSize': ''}
-               ></textarea>
-            
-          </div>
-
+          <Editor input={input}
+                  handleChange={handleChange}
+                  resizeEditor={resizeEditor}
+                  editorBig={editorBig} />
 
           <div>
           
