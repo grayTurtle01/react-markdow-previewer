@@ -2,7 +2,7 @@
 See markdown transformation in real-time
 
 ## ScreenShot 📸
-![ScrrenShot](images/screeshot.png)
+![ScrrenShot](images/screenshot.png)
 
 ## Demo 🖥️
 [Demo]()
